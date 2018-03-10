@@ -2,15 +2,15 @@
 title: dartlang.rocks
 timezone: UTC
 collections:
+  authors:
+    title: Autoren
+    output: false
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
     output: true
-  authors:
-    title: Autoren
-    output: false
 defaults:
 - scope:
     path: ''
@@ -23,13 +23,13 @@ defaults:
     - image: "/uploads/sample.jpg"
       alt: Bildbeschreibung
     author: Adrian Stabiszewski
-    custom_components: '<script async custom-element="amp-gist" src="https://cdn.ampproject.org/v0/amp-gist-0.1.js"></script>'
+    custom_components: <script async custom-element="amp-gist" src="https://cdn.ampproject.org/v0/amp-gist-0.1.js"></script>
 - scope:
     path: ''
     type: authors
   values:
     title: Vorname Nachname
-    image: /uploads/user.png
+    image: "/uploads/user.png"
     twitter: username
     github: user-name
     mail: info@example.com
