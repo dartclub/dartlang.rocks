@@ -1,0 +1,100 @@
+
+.h1,h1 {
+    font-size: 3rem;
+    line-height: 3.5rem
+  }
+  
+  .h2,h2 {
+    font-size: 2rem;
+    line-height: 2.5rem
+  }
+  
+  .h3,h3 {
+    font-size: 1.5rem;
+    line-height: 2rem
+  }
+  
+  .h4,h4 {
+    font-size: 1.125rem;
+    line-height: 1.5rem
+  }
+  
+  .h5,h5 {
+    font-size: .875rem;
+    line-height: 1.125rem
+  }
+  
+  .h6,h6 {
+    font-size: .75rem;
+    line-height: 1rem
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    letter-spacing: .06rem
+  }
+  
+  a,a:active,a:visited {
+    color: inherit
+  }
+
+  p {
+    padding: 0;
+    margin: 0 0 $default-margin;
+  }
+  
+  .ampstart-accent {
+    color: #003f93
+  }
+  
+  #content:target {
+    margin-top: calc(0px - 3.5rem);
+    padding-top: 3.5rem
+  }
+  
+  .ampstart-title-lg {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: .06rem
+  }
+  
+  .ampstart-title-md {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: .06rem
+  }
+  
+  .ampstart-title-sm {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: .06rem
+  }
+  
+  .ampstart-subtitle,body {
+    line-height: 1.5rem;
+    letter-spacing: normal
+  }
+  
+  .ampstart-subtitle {
+    color: #003f93;
+    font-size: 1rem
+  }
+  
+  .ampstart-byline,.ampstart-caption,.ampstart-hint,.ampstart-label {
+    font-size: .875rem;
+    color: #4f4f4f;
+    line-height: 1.125rem;
+    letter-spacing: .06rem
+  }
+  
+  .ampstart-label {
+    text-transform: uppercase
+  }
+  
+  .ampstart-footer,.ampstart-small-text {
+    font-size: .75rem;
+    line-height: 1rem;
+    letter-spacing: .06rem
+  }
