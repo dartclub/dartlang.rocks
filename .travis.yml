@@ -1,0 +1,25 @@
+language: node_js
+node_js: '8'
+notifications:
+  email: false
+
+before_install:
+  - rvm install 2.4
+  - rvm use 2.
+  - gem install bundler
+  - bundle install
+
+install:
+  - npm install -g firebase-tools
+
+before_script:
+  - chmod +x ./script/cibuild
+
+script: ./script/cibuild
+
+after_success:
+  - firebase deploy --token $FIREBASE_TOKEN
+branches:
+  only:
+  - master
+sudo: false # route your build to the container-based infrastructure for a faster

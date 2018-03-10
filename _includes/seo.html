@@ -1,0 +1,194 @@
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+            <title>
+            {% if page.title %}
+                {% if page.title != 'Startseite' %}
+                    {{ page.title }}
+                {% else %}
+                    Das führende Magazin für die Motorradbranche
+                {% endif %} - {{ site.title }}
+            {% else %}
+                {{ site.title }}
+            {% endif %}
+            </title>
+            
+            {% if page.layout != 'amp' %}<link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />{% endif %}
+        
+            {% if page.path contains '_posts' %}
+            {% if page.layout != 'amp' %}
+            <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}.html">
+            {% endif %}
+            {% endif %}
+        
+            {% if page.layout == 'amp' %}
+            <link rel="canonical" href="{{ page.canonical_url | prepend: site.baseurl | prepend: site.url }}" />    
+            {% endif %}
+        
+            <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
+            <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}: {{ site.description }}{% endif %}">
+            <meta name="robots" content="index,follow">
+            {% if page.author %}
+                <meta name="author" content="{{ page.author }}">
+            {% endif %}
+            <meta itemprop="name" content="{{ site.title }}">
+            <meta name="theme-color" content="#D32F2F">
+            <meta name="HandheldFriendly" content="True">
+            <meta name="MobileOptimized" content="320">
+        
+            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/uploads/144x144.png">
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/uploads/114x114.png">
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/uploads/72x72.png">
+            <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/uploads/57x57.png">
+            <link rel="shortcut icon" sizes="196x196" href="{{ site.baseurl }}/uploads/196x196.png">
+            <link rel="shortcut icon" href="{{ "/uploads/favicon.png" | prepend: site.baseurl }}">    
+        
+            <meta name="msapplication-TileImage" content="{{ site.baseurl }}/uploads/144x144.png">
+            <meta name="msapplication-TileColor" content="#D32F2F">
+        
+            <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
+            <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}: {{ site.description }}{% endif %}" />
+            <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{% if page.image %}{{ page.image }}{% else %}{% if page.gallery %}{{ page.gallery[0].image }}{% else %}/uploads/wob-banner_800x600px.png{% endif %}{% endif %}" />
+            <meta property="og:image:type" content="image/png"  />
+        
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:site" content="{% if site.twitter_username %}@{{ site.twitter_username }}{% else %} "lukashimsel" {% endif %}" />
+            <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} - {{ site.title }}" />
+            <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}: {{ site.description }}{% endif %}" />
+            <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{% if page.image %}{{ page.image }}{% else %}{% if page.gallery %}{{ page.gallery[0].image }}{% else %}/uploads/wob-banner_800x600px.png{% endif %}{% endif %}" />
+            
+            <link href="{{ "/news/feed.xml" | prepend: site.baseurl }}" type="application/rss+xml" rel="alternate" title="RSS feed">
+        
+            <script type="application/ld+json">
+                {
+                  "@context": "http://schema.org",
+                  "@type": "Organization",
+                  "url": "{{ site.url }}",
+                  "name": "{{ site.title }}",
+                  "logo": "{{ site.url }}{{ site.baseurl }}/uploads/196x196.png",
+                  "sameAs": [
+                      "https://twitter.com/RedaktionWoB"
+                  ],
+                  "contactPoint": [
+                      { "@type": "ContactPoint",
+                      "telephone": "+49-9333-904-990",
+                      "contactType": "sales"
+                      }
+                  ]
+                }
+              </script>
+              <script type="application/ld+json">            
+            {"@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "{{ site.title }}",
+            "headline": "Das führende Magazin der Motorradbranche",
+            "url": "{{ site.url }}",
+            "image": "{{ site.url }}{{ site.baseurl }}/uploads/wob-banner_800x600px.png",
+            "description": "{{ site.description }}",
+            "publisher": {
+                "@type": "Organization",
+                "logo": "{{ site.url }}{{ site.baseurl }}/uploads/196x196.png",
+                "url": "{{ site.url }}",
+                "name": "{{ site.title }}"
+              },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://world-of-bike.de/news/search.html?query={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+            }
+            </script>
+        
+            {% if page.title == 'Startseite' %}
+            <script type="application/ld+json">
+                  {
+                    "@context":"http://schema.org",
+                    "@type":"ItemList",
+                    "itemListElement":[
+                    {% assign k = 1 %}
+                    {% for post in site.posts | limit: 10 %}
+                    {
+                        "@type":"ListItem",
+                        "position":{{k}},
+                        "url": "{{ site.url }}{{ site.baseurl }}{{ post.url }}"
+                        {% assign k = k | plus: 1 %}
+                    } {% if forloop.last %}{% else %},{% endif %}
+                    {% endfor %}
+                      
+                    ]
+                  }
+            </script>
+            {% endif %}
+            {% if page.path contains '_posts' and page.layout != 'amp' %}
+            <script type="application/ld+json">
+                  {
+                      "@context": "http://schema.org",
+                      "@type": "NewsArticle",
+                      "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://google.com/article"
+                      },
+                      "headline": "{{ page.title }}",
+                      "image": {
+                          "@type": "ImageObject",
+                          "url": "{{ site.url }}{{ site.baseurl }}{{ page.gallery[0].image }}",
+                          "height": 720,
+                          "width": 1280
+                        },
+                      "datePublished": "{{ page.date | date_to_xmlschema }}",
+                      "dateModified": "{{ page.date | date_to_xmlschema }}",
+                      "author": {
+                        "@type": "Person",
+                        "name": "{{ page.author }}"
+                      },
+                       "publisher": {
+                        "@type": "Organization",
+                        "name": "{{ site.title }}",
+                        "logo": {
+                          "@type": "ImageObject",
+                          "url": "{{ site.url }}{{ site.baseurl }}/uploads/196x196.png"
+                        }
+                      },
+                      "description": "{{ page.excerpt }}"
+                    }
+                </script>
+                {% endif %}
+                  {% if page.layout == 'amp' %}
+                  <script type="application/ld+json">
+                  {
+                      "@context": "http://schema.org",
+                      "@type": "NewsArticle",
+                      "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://google.com/article"
+                      },
+                      "headline": "{{ page.title }}",
+                      "image": {
+                        "@type": "ImageObject",
+                        "url": "{{ site.url }}{{ site.baseurl }}{{ page.gallery[0].image }}",
+                        "height": 720,
+                        "width": 1280
+                      },
+                      "datePublished": "{{ page.date | date_to_xmlschema }}",
+                      "dateModified": "{{ page.date | date_to_xmlschema }}",
+                      "author": {
+                        "@type": "Person",
+                        "name": "{{ page.author }}"
+                      },
+                       "publisher": {
+                        "@type": "Organization",
+                        "name": "{{ site.title }}",
+                        "logo": {
+                          "@type": "ImageObject",
+                          "url": "{{ site.url }}{{ site.baseurl }}/uploads/wob-banner_600x60.png",
+                          "width": 600,
+                          "height": 60
+                        }
+                      },
+                      "description": "{{ page.description }}"
+                    }
+                </script>
+                {% endif %}
+                

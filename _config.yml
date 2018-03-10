@@ -1,0 +1,61 @@
+---
+title: dartlang.rocks
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+  authors:
+    title: Autoren
+    output: false
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/news/:categories/:year/:month/:day/:title.html"
+    excerpt: 
+    gallery:
+    - image: "/uploads/sample.jpg"
+      alt: Bildbeschreibung
+    author: Adrian Stabiszewski
+    custom_components: '<script async custom-element="amp-gist" src="https://cdn.ampproject.org/v0/amp-gist-0.1.js"></script>'
+- scope:
+    path: ''
+    type: authors
+  values:
+    title: Vorname Nachname
+    image: /uploads/user.png
+    twitter: @username
+    github: user-name
+    mail: info@example.com
+    website: https://example.com
+safe: false
+markdown: kramdown
+highlighter: rouge
+lsi: false
+permalink: "/:title"
+description: ''
+baseurl: 
+url: https://dartlang.rocks
+accent: "#f7f7e6"
+isolang: en
+exclude:
+- LICENSE
+- README.md
+include:
+- ".firebaserc"
+- firebase.json
+replacements:
+- - "<img"
+  - "<amp-img"
+- - alt="" />
+  - ' layout="responsive" height="300px" width="600px"></amp-img>'
+plugins:
+- jekyll-sass-converter
+sass:
+  style: compressed

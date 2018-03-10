@@ -1,0 +1,36 @@
+---
+layout: 
+---
+
+{
+    "name": "{{ site.title }}",
+    "short_name": "WoB",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#D32F2F",
+    "theme_color": "#D32F2F",    
+    "lang": "de-DE",
+    "orientation": "portrait",
+    "description": "{{ site.description }}",
+    "icons": [{
+      "src": "{{ site.baseurl }}/uploads/57x57.png",
+      "sizes": "57x57",
+      "type": "image/png"
+    }, {
+      "src": "{{ site.baseurl }}/uploads/72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }, {
+      "src": "{{ site.baseurl }}/uploads/114x114.png",
+      "sizes": "114x114",
+      "type": "image/png"
+    }, {
+      "src": "{{ site.baseurl }}/uploads/144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "{{ site.baseurl }}/uploads/196x196.png",
+      "sizes": "196x196",
+      "type": "image/png"
+    }]
+  }
