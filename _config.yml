@@ -57,5 +57,6 @@ replacements:
   - ' layout="responsive" height="300px" width="600px"></amp-img>'
 plugins:
 - jekyll-sass-converter
+- jekyll-archives
 sass:
   style: compressed

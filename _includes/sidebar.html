@@ -1,0 +1,32 @@
+
+<amp-sidebar id="header-sidebar" class="ampstart-sidebar px3  " layout="nodisplay">
+    <div class="flex justify-start items-center ampstart-sidebar-header">
+        <div role="button" aria-label="close sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger items-start">✕</div>
+    </div>
+    <nav class="ampstart-sidebar-nav ampstart-nav">
+        <ul class="list-reset m0 p0 ampstart-label">
+            {% for item in site.data.header %}
+            {% if item.links %}
+            <li class="ampstart-nav-item ampstart-nav-dropdown relative ">
+                <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+                    <section>
+                        <header>{{ item.title }}</header>
+                        <ul class="ampstart-dropdown-items list-reset m0 p0">
+                            {% for innerItem in item.links %}
+                            <li class="ampstart-dropdown-item">
+                                <a href="{{ innerItem.link }}" class="text-decoration-none">{{ innerItem.title }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </section>
+                </amp-accordion>
+            </li>
+            {% else %}
+            <li class="ampstart-nav-item ">
+                <a class="ampstart-nav-link" href="{{ item.link }}">{{ item.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
+</amp-sidebar>
