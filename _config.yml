@@ -30,7 +30,7 @@ defaults:
   values:
     title: Vorname Nachname
     image: /uploads/user.png
-    twitter: @username
+    twitter: username
     github: user-name
     mail: info@example.com
     website: https://example.com
