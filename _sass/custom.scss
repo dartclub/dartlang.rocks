@@ -3,7 +3,7 @@
 body {
   background: #fff;
   color: #4a4a4a;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif;
+  font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif;
   min-width: 315px;
   overflow-x: hidden;
   font-smooth: always;
@@ -561,125 +561,6 @@ amp-carousel .ampstart-image-with-caption {
 
 .ampstart-input>select::-ms-expand {
   display: none
-}
-
-.ampstart-headerbar {
-  background-color: #fff;
-  color: #000;
-  z-index: 999;
-  box-shadow: 0 0 5px 2px rgba(0,0,0,.1)
-}
-
-.ampstart-headerbar+:not(amp-sidebar),.ampstart-headerbar+amp-sidebar+* {
-  margin-top: 3.5rem
-}
-
-.ampstart-headerbar-nav .ampstart-nav-item {
-  padding: 0 1rem;
-  background: transparent;
-  opacity: .8
-}
-
-.ampstart-headerbar-nav {
-  line-height: 3.5rem
-}
-
-.ampstart-nav-item:active,.ampstart-nav-item:focus,.ampstart-nav-item:hover {
-  opacity: 1
-}
-
-.ampstart-navbar-trigger:focus {
-  outline: none
-}
-
-.ampstart-nav a,.ampstart-navbar-trigger,.ampstart-sidebar-faq a {
-  cursor: pointer;
-  text-decoration: none
-}
-
-.ampstart-nav .ampstart-label {
-  color: inherit
-}
-
-.ampstart-navbar-trigger {
-  line-height: 3.5rem;
-  font-size: 2rem
-}
-
-.ampstart-headerbar-nav {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1
-}
-
-.ampstart-nav-search {
-  -webkit-box-flex: 0.5;
-  -ms-flex-positive: 0.5;
-  flex-grow: 0.5
-}
-
-.ampstart-headerbar .ampstart-nav-search:active,.ampstart-headerbar .ampstart-nav-search:focus,.ampstart-headerbar .ampstart-nav-search:hover {
-  box-shadow: none
-}
-
-.ampstart-nav-search>input {
-  border: none;
-  border-radius: 3px;
-  line-height: normal
-}
-
-.ampstart-nav-dropdown {
-  min-width: 200px
-}
-
-.ampstart-nav-dropdown amp-accordion header {
-  background-color: #fff;
-  border: none
-}
-
-.ampstart-nav-dropdown amp-accordion ul {
-  background-color: #fff
-}
-
-.ampstart-nav-dropdown .ampstart-dropdown-item,.ampstart-nav-dropdown .ampstart-dropdown>section>header {
-  background-color: #fff;
-  color: #000
-}
-
-.ampstart-nav-dropdown .ampstart-dropdown-item {
-  color: #003f93
-}
-
-.ampstart-sidebar {
-  background-color: #fff;
-  color: #000;
-  min-width: 300px;
-  width: 300px
-}
-
-.ampstart-sidebar .ampstart-icon {
-  fill: #003f93
-}
-
-.ampstart-sidebar-header {
-  line-height: 3.5rem;
-  min-height: 3.5rem
-}
-
-.ampstart-sidebar .ampstart-dropdown-item,.ampstart-sidebar .ampstart-dropdown header,.ampstart-sidebar .ampstart-faq-item,.ampstart-sidebar .ampstart-nav-item,.ampstart-sidebar .ampstart-social-follow {
-  margin: 0 0 2rem
-}
-
-.ampstart-sidebar .ampstart-nav-dropdown {
-  margin: 0
-}
-
-.ampstart-sidebar .ampstart-navbar-trigger {
-  line-height: inherit
-}
-
-.ampstart-navbar-trigger svg {
-  pointer-events: none
 }
 
 .ampstart-related-article-section {

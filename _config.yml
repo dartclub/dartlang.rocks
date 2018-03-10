@@ -17,7 +17,7 @@ defaults:
     type: posts
   values:
     layout: post
-    permalink: "/news/:categories/:year/:month/:day/:title.html"
+    permalink: "/:year/:month/:day/:title.html"
     excerpt: 
     gallery:
     - image: "/uploads/sample.jpg"
