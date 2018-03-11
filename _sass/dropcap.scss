@@ -1,0 +1,22 @@
+.ampstart-dropcap:first-letter {
+    color: #000;
+    font-size: 3rem;
+    font-weight: 700;
+    float: left;
+    overflow: hidden;
+    line-height: 3rem;
+    margin-left: 0;
+    margin-right: .5rem
+}
+
+.ampstart-initialcap {
+    padding-top: 1rem;
+    margin-top: 1.5rem
+}
+
+.ampstart-initialcap:first-letter {
+    color: #000;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-left: -2px
+}

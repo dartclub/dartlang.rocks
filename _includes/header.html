@@ -1,6 +1,15 @@
-<header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4 ">
-    <div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger  pr2 md-hide lg-hide">☰
+<header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl4 pr4">
+    <div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger pl2 md-hide lg-hide right">☰
     </div>
-    <a class="my0 mx-auto ampstart-headbar-title" href="{{ site.url }}">{{ site.title }}</a>
+    <a class="my0 left ampstart-headbar-title ampstart-nav-link ampstart-label text-decoration-none" href="{{ site.url }}">{{ site.title }}</a>
+    <nav class="ampstart-headerbar-nav ampstart-nav  xs-hide sm-hide">
+        <ul class="list-reset m0 p0 flex nowrap justify-right right">
+            {% for item in site.data.header %}
+            <li class="ampstart-nav-item ">
+                <a class="ampstart-nav-link ampstart-label" href="{{ item.link }}">{{ item.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
 </header>
 {% include sidebar.html %}

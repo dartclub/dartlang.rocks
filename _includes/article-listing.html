@@ -1,0 +1,12 @@
+<section class="ampstart-related-article-section p3 mb4 border-top border-bottom">
+    <article class="ampstart-related-article">
+        {% if post.gallery[0] %}
+        <amp-img src="{{ post.gallery[0].image }}" width="1280" height="720" layout="responsive" alt="{{ post.gallery[0].alt }}" class="mb3"></amp-img>
+        {% endif %}  
+        <h2 class="ampstart-heading h4 m0 mb3">{{ post.title }}</h2>
+        <p class="line-height-4 mb3">
+          {{ post.excerpt }}
+        </p>
+        <a href="{{ post.url }}" class="ampstart-rekated-article-readmore block text-decoration-none ampstart-label">Read more</a>
+    </article>
+  </section>

@@ -4,6 +4,8 @@ date: 2018-03-10 14:52:00 Z
 gallery:
 - image: "/uploads/ingredient3.jpg"
   alt: irgendwelches Obst!
+categories:
+- 'test'
 ---
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy

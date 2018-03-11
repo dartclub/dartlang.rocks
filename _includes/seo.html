@@ -54,7 +54,7 @@
             <meta property="og:image:type" content="image/png"  />
         
             <meta name="twitter:card" content="summary" />
-            <meta name="twitter:site" content="{% if site.twitter_username %}@{{ site.twitter_username }}{% else %} "lukashimsel" {% endif %}" />
+            <meta name="twitter:site" content="{% if site.twitter_username %}@{{ site.twitter_username }}{% else %}lukashimsel{% endif %}" />
             <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} - {{ site.title }}" />
             <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}: {{ site.description }}{% endif %}" />
             <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{% if page.image %}{{ page.image }}{% else %}{% if page.gallery %}{{ page.gallery[0].image }}{% else %}/uploads/wob-banner_800x600px.png{% endif %}{% endif %}" />

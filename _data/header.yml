@@ -1,20 +1,4 @@
 - title: Home
   link: /
-- title: Categories
-  links:
-    - title: News
-      link: /news/
-    - title: Opinion and Thoughts
-      link: /opinion-and-thoughts/
-    - title: Tips and Tricks
-      link: /tips-and-tricks/
-    - title: Tutorials
-      link: /tutorials/
 - title: About us
-  links:
-    - title: About us
-      link: /about/
-    - title: Impressum
-      link: /imprint/
-    - title: Contribute (Github)
-      link: https://github.com/org-name/dartlang.rocks
+  link: /about/

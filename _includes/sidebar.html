@@ -6,26 +6,9 @@
     <nav class="ampstart-sidebar-nav ampstart-nav">
         <ul class="list-reset m0 p0 ampstart-label">
             {% for item in site.data.header %}
-            {% if item.links %}
-            <li class="ampstart-nav-item ampstart-nav-dropdown relative ">
-                <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
-                    <section>
-                        <header>{{ item.title }}</header>
-                        <ul class="ampstart-dropdown-items list-reset m0 p0">
-                            {% for innerItem in item.links %}
-                            <li class="ampstart-dropdown-item">
-                                <a href="{{ innerItem.link }}" class="text-decoration-none">{{ innerItem.title }}</a>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </section>
-                </amp-accordion>
+            <li class="ampstart-nav-item">
+                <a class="ampstart-nav-link ampstart-label" href="{{ item.link }}">{{ item.title }}</a>
             </li>
-            {% else %}
-            <li class="ampstart-nav-item ">
-                <a class="ampstart-nav-link" href="{{ item.link }}">{{ item.title }}</a>
-            </li>
-            {% endif %}
             {% endfor %}
         </ul>
     </nav>

@@ -1,6 +1,5 @@
 ---
-title: Über uns
+title: About us
 layout: page
-is_in_menu: true
 ---
 
