@@ -6,27 +6,27 @@
     line-height: 1.125rem;
     padding: .7em .8em;
     text-decoration: none;
-    white-space: nowrap;
+    black-space: nowrap;
     word-wrap: normal;
     vertical-align: middle;
     cursor: pointer;
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #fff
+    background-color: $dark-green;
+    color: $black;
+    border: 1px solid $dark-green;
   }
   
   .ampstart-btn:visited {
-    color: #fff
+    color: $black
   }
   
   .ampstart-btn-secondary {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000
+    background-color: $black;
+    color: $dark-green;
+    border: 1px solid $dark-green
   }
   
   .ampstart-btn-secondary:visited {
-    color: #000
+    color: $dark-green
   }
   
   .ampstart-btn:active .ampstart-btn:focus {

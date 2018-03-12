@@ -4,12 +4,26 @@ layout: default
 
 <header>
         <h1 class="ampstart-heading m0 mb3">{{ page.title }}</h1>
-          
-<address class="ampstart-byline clearfix mb4 px3 h5">
-  <time class="ampstart-byline-pubdate block bold my1" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%-m/%-d/%Y" }}</time>
-</address>
+         
+      <section class="mb4 px3">
+        <p>Date: {{ page.date | date: '%B %d, %Y' }}</p>
+        <p>Categories:
+        {% for category in page.categories %}
+        <a class="chip" href="{{ site.baseurl }}/{{ category }}/">{{ category }}</a> 
+        {% endfor %}
+        
+      </p>
+      
+      </section>
         <amp-img src="{{ page.gallery[0].image }}" width="1280" height="720" layout="responsive" alt="{{ page.gallery[0].alt }}" class="mb4 mx3"></amp-img>
       </header>
 <section class="mb4 px3">
 {{ content }}
 </section>
+<section class="mb4 px3 center">
+{% if page.next.url %}<a href="{{ site.baseurl }}{{ page.next.url }}" class="ampstart-btn">Next</a>{% endif %}
+<a href="/" class="ampstart-btn">Home</a>
+{% if page.previous.url %}<a href="{{ site.baseurl }}{{ page.previous.url }}" class="ampstart-btn">Previous</a>{% endif %}
+</section>
+{% include social-share.html %}
+{% include recent-posts.html %}
