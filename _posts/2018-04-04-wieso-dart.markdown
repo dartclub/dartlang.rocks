@@ -1,8 +1,9 @@
 ---
 title: Wieso Dart
-author: adrian
+date: 2018-04-04 00:00:00 Z
 categories:
-- blog 
+- blog
+author: adrian
 ---
 
 Dart als Programmiersprache wird bereits seit 2010 von einem Team in Google entwickelt. In den
