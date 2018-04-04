@@ -15,7 +15,9 @@ layout: default
       </p>
       
       </section>
+        {% if page.gallery[0] %}
         <amp-img src="{{ page.gallery[0].image }}" width="1280" height="720" layout="responsive" alt="{{ page.gallery[0].alt }}" class="mb4 mx3"></amp-img>
+        {% endif %}
       </header>
 <section class="mb4 px3">
 {{ content }}
