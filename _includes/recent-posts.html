@@ -1,5 +1,5 @@
 <section class="ampstart-related-article-section p3 mb4 border-top border-bottom">
-        <h2 class="ampstart-heading h4 m0 mb3">Recent Posts</h2>
+        <h2 class="ampstart-heading h3 m0 mb3">Neueste Posts</h2>
 <ul class="list-reset">
     {% for post in site.posts limit: 4 %}
     <li class="pl3">~ <a href="{{ site.baseurl }}{{ post.url }}">{{ page.date | date: '%B %d, %Y' }}: {{ post.title }}</a></li>

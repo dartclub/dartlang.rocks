@@ -4,7 +4,7 @@ layout:
 
 {
     "name": "{{ site.title }}",
-    "short_name": "WoB",
+    "short_name": "dartlang.rocks",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#D32F2F",

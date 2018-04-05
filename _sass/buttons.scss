@@ -29,10 +29,6 @@
     color: $dark-green
   }
   
-  .ampstart-btn:active .ampstart-btn:focus {
-    opacity: .8
-  }
-  
   .ampstart-btn[disabled],.ampstart-btn[disabled]:active,.ampstart-btn[disabled]:focus,.ampstart-btn[disabled]:hover {
     opacity: .5;
     outline: 0;

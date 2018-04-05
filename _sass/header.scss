@@ -1,7 +1,7 @@
 
 .ampstart-headerbar {
-    background-color: #fff;
-    color: #000;
+    background-color: $dark-blue;
+    color: $white;
     z-index: 999;
     box-shadow: 0 0 5px 2px rgba(0,0,0,.1);
     line-height: $header-height;
@@ -15,7 +15,6 @@
   .ampstart-headerbar-nav .ampstart-nav-item {
     padding: 0 1rem;
     background: transparent;
-    opacity: .8
   }
   
   .ampstart-headerbar-nav {
@@ -25,10 +24,6 @@
       line-height: $header-height;
       height: $header-height;
       font-size: 3rem;
-  }
-  
-  .ampstart-nav-item:active,.ampstart-nav-item:focus,.ampstart-nav-item:hover {
-    opacity: 1
   }
   
   .ampstart-navbar-trigger:focus {
@@ -157,15 +152,5 @@
   
   .absolute .ampstart-dropdown-items {
     z-index: 200
-  }
-  
-  .ampstart-dropdown-item {
-    background-color: #000;
-    color: #003f93;
-    opacity: .9
-  }
-  
-  .ampstart-dropdown-item:active,.ampstart-dropdown-item:hover {
-    opacity: 1
   }
   
