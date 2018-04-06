@@ -18,7 +18,7 @@ layout:
       <news:title>{{ post.title | xml_escape }}</news:title>
       {% assign cats = post.categories %}
       {% assign cats = cats | concat: post.tags %}
-      <news:keywords>Motorrad, {{ cats | join: ', ' | xml_escape }}</news:keywords>
+      <news:keywords>{{ cats | join: ', ' | xml_escape }}</news:keywords>
     </news:news>
   </url>
   {% endfor %}

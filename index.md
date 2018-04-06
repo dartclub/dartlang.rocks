@@ -1,5 +1,5 @@
 ---
-title: Latest Articles
+title: Neueste Artikel
 layout: page
 ---
 
