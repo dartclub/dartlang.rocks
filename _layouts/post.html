@@ -3,13 +3,13 @@ layout: default
 ---
 
 <header>
-        <h1 class="ampstart-heading m0 mb3">{{ page.title }}</h1>
+        <h1 class="ampstart-heading m0 mb2">{{ page.title }}</h1>
          
       <section class="mb4 px3">
-        <p>Date: {{ page.date | date: '%B %d, %Y' }}</p>
-        <p>Categories:
+        <p>Datum: {{ page.date | date: "%d.%m.%Y" }}</p>
+        <p>Kategorien:
         {% for category in page.categories %}
-        <a class="chip" href="{{ site.baseurl }}/{{ category }}/">{{ category }}</a> 
+        <span class="chip">{{ category }}</span> 
         {% endfor %}
         
       </p>

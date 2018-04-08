@@ -23,7 +23,6 @@ defaults:
     - image: "/uploads/sample.jpg"
       alt: Bildbeschreibung
     author: Adrian Stabiszewski
-    custom_components: <script async custom-element="amp-gist" src="https://cdn.ampproject.org/v0/amp-gist-0.1.js"></script>
 - scope:
     path: ''
     type: authors
