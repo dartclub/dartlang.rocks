@@ -532,6 +532,10 @@
     align-content: space-around
 }
 
+.round{
+    border-radius: 50%;
+}
+
 .content-stretch {
     -ms-flex-line-pack: stretch;
     align-content: stretch
@@ -729,7 +733,6 @@ body {
     color: #4a4a4a;
     min-width: 315px;
     overflow-x: hidden;
-    font-smooth: always;
     -webkit-font-smoothing: antialiased
 }
 

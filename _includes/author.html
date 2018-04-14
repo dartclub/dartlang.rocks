@@ -1,0 +1,11 @@
+<section class="ampstart-related-article-section p3 mb4 border-top border-bottom">
+    <article class="ampstart-related-article">
+        {% assign author = site.authors | where: 'slug', page.author | first %}
+        <h2 class="ampstart-heading h3 m0 mb2">Über den Autor</h2>
+        <h3>{{ author.title }}</h3>
+        <amp-img layout="fixed" height="80" width="80" class="round" src="{{ author.image }}"></amp-img>
+        <p class="mb2">
+          {{ author.content | markdownify | truncatewords: 70 }}
+        </p>
+    </article>
+  </section>

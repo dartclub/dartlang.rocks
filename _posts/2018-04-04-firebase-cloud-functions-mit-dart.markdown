@@ -19,7 +19,7 @@ möglich seine Dart Programme so in JavaScript zu konvertieren, dass sie mit den
 Um ein Cloud Functions Projekt zu starten erzeugt man zuerst ein leeres 
 Verzeichnis und initialisiert darin ein neues Firebase Projekt:
 
-<amp-gist data-gistid="fe1f34d201a464d4235d8875bb017d1b" data-file="init.sh" layout="fixed-height" height="200" class="mb2"></amp-gist>
+<amp-gist data-gistid="fe1f34d201a464d4235d8875bb017d1b" data-file="init.sh" layout="fixed-height" height="200" class="mb4"></amp-gist>
 
 Danach existiert in dem Unterordner **functions** eine standard Node.js Package Struktur. Um jetzt darin ein
 Dart Projekt einzurichten muss man eine **pubspec.yaml** erstellen. Ein Beispiel findet man [hier](https://github.com/pulyaevskiy/firebase-functions-interop#2-initialize-dart-project).
@@ -30,12 +30,12 @@ Im nächsten Schritt kann dann das Dart Programm erstellt werden. Hierzu bitte e
 Namen **node** im functions Verzeichnis die Datei **index.dart** anlegen. Das folgende Beispiel liefert einfach 
 eine JSON Datenstruktur zurück.
 
-<amp-gist data-gistid="fe1f34d201a464d4235d8875bb017d1b" data-file="index.dart" layout="fixed-height" height="400" class="mb2"></amp-gist>
+<amp-gist data-gistid="fe1f34d201a464d4235d8875bb017d1b" data-file="index.dart" layout="fixed-height" height="400" class="mb4"></amp-gist>
 
 Jetzt fehlt noch das Compilieren der Dart Dateien nach JavaScript. Hierzu kann man den dart2js Compiler verwenden.
 Im Zusammenhang mit dem neuen [build_runner](https://github.com/dart-lang/build/blob/master/docs/getting_started.md) kann das ganze nun entsprechend konfiguriert werden. Dazu wird eine Config-Datei mit dem Namen **build.yaml** benötigt, die im functions Verzeichnis abgelegt wird:
 
-<amp-gist data-gistid="fe1f34d201a464d4235d8875bb017d1b" data-file="build.yaml" layout="fixed-height" height="400" class="mb2"></amp-gist>
+<amp-gist data-gistid="fe1f34d201a464d4235d8875bb017d1b" data-file="build.yaml" layout="fixed-height" height="400" class="mb4"></amp-gist>
 
 Der build_runner wird nun mit dem folgenden Befehl im functions Verzeichnis ausgeführt:
 

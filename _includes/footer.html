@@ -10,3 +10,18 @@
       &copy; {{ site.time | date: "%Y" }} {{ site.title }} Autoren
     </small>
   </footer>
+  <amp-analytics type="googleanalytics" id="analytics-ga">
+      <script type="application/json">
+      {
+        "vars": {
+          "account": "{{ site.ga_id }}"
+        },
+        "triggers": {
+          "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+          }
+        }
+      }
+      </script>
+    </amp-analytics>

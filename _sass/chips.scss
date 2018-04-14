@@ -1,7 +1,10 @@
 .chip{
-    background-color: $dark-green;
-    border-radius: initial;
-    padding: 2px 10px;
-    color: $black;
-    text-decoration: none;
+    display: inline-block;
+    line-height: 32px;
+    height: 32px;
+}
+
+.chip>amp-img {
+    float: right;
+    margin-left: 1rem;
 }
