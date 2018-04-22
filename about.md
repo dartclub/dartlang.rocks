@@ -1,7 +1,7 @@
 ---
 title: Über uns
+permalink: "/about/index.html"
 layout: page
-permalink: /about/index.html
 ---
 
 {% assign authors = site.authors | sort: 'title' %}

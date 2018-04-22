@@ -1,8 +1,9 @@
 ---
-title: "DART: Cascade Notation und andere Besonderheiten"
-author: lukas
+title: 'DART: Cascade Notation und andere Besonderheiten'
+date: 2018-04-22 20:20:46.024000000 Z
 categories:
 - blog
+author: lukas
 ---
 
 Wer in Dart geschriebenen Code zum ersten Mal sieht, wird feststellen, dass im Vergleich zu anderen Sprachen einige Neuerungen der Sprachsyntax festzustellen sind, die man so noch nicht kennt. In diesem Post werde ich einige dieser Schreibweisen erläutern.
