@@ -1,11 +1,10 @@
 ---
-title: 'Moment JS in Dart? Arbeiten mit Zeit'
+title: Moment JS in Dart? Arbeiten mit Zeit
 date: 2018-04-25 20:20:46.024000000 Z
 categories:
 - blog
 author: lukas
 ---
-
 
 Moment.js ist *die* Bibliothek für alles, was man mit Zeiträumen und Daten in Javascript anstellen möchte.
 
