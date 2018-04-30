@@ -6,7 +6,6 @@ twitter: "@nitegate"
 github: grundid
 mail: as@grundid.de
 website: http://grundid.de/
-slug: adrian
 ---
 
 Professional Java Developer, Lifestyle Entrepreneur, Clean Code Believer, Cycling Enthusiast, Coworking Heilbronn e. V., Code For Heilbronn, GDG Unterland
