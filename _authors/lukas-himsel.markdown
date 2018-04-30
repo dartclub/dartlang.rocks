@@ -6,6 +6,7 @@ twitter: "@lukashimsel"
 github: lukas-h
 mail: lukas@himsel.me
 website: http://himsel.me
+slug: lukas
 ---
 
 Selbstständiger Webentwickler - Interessiert an Open Data, modernen Web-Technologien und Musik.
