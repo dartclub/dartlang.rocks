@@ -30,7 +30,7 @@ Worauf aber geachtet werden muss ist, dass die Cascade Notation nur auf Objekte 
 In Dart können ausufernde if-null-Abragen auf wenige Zeichen komprimiert werden.
 - conditional member access:  
     anstatt  
-    `if(element.foo != null){ element.foo(); }`  
+    `if(element != null){ element.foo(); }`  
     einfach  
     `element?.foo();`  
 - Zuweisungen mit Abfrage:  
